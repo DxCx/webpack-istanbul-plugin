@@ -1,11 +1,6 @@
 var istanbul = require('istanbul');
 var path = require('path');
 
-var defaultOptions = {
-    embedSource: true,
-    noAutoWrap: true
-};
-
 function IstanbulPlugin(options) {
 	options = Object.assign({}, options);
 	options = {
@@ -22,15 +17,6 @@ function IstanbulPlugin(options) {
 	this._options = options;
 	this.instrumented = {};
 }
-
-function loadSource(source) {
-    var instrumenter = new istanbul.Instrumenter(defaultOptions);
-    var ret = instrumenter.instrumentSync(source, this.resourcePath);
-
-    // global.__coverage__[this.resourcePath] = instrumenter.coverState;
-
-    return ret;
-};
 
 IstanbulPlugin.prototype.filterModule = function(module) {
 	if ( !module.userRequest ) {

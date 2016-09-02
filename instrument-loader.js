@@ -10,16 +10,16 @@ var defaultOptions = {
 };
 
 module.exports = function(source) {
-    var userOptions = loaderUtils.parseQuery(this.query);
-    var instrumenter = new istanbul.Instrumenter(
-        assign({}, defaultOptions, userOptions)
-    );
-    var ret = instrumenter.instrumentSync(source, this.resourcePath);
+	var userOptions = loaderUtils.parseQuery(this.query);
+	var instrumenter = new istanbul.Instrumenter(
+			assign({}, defaultOptions, userOptions)
+			);
+	var ret = instrumenter.instrumentSync(source, this.resourcePath);
 
-    if (this.cacheable) {
-        this.cacheable();
-    }
+	if (this.cacheable) {
+		this.cacheable();
+	}
 
 	this._module.meta.coverState = instrumenter.coverState;
-    return ret;
+	return ret;
 };

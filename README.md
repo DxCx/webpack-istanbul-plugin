@@ -76,7 +76,7 @@ This file will be the only entry point for Webpack:
                 }
             ],
 			plugins: [
-				new IstanbulInstrumenterPlugin({
+				new IstanbulPlugin({
 					test: /\.js$/,
 					include: [
 						path.resolve('src/components'),
