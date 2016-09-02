@@ -1,0 +1,38 @@
+{
+  "name": "webpack-istanbul-plugin",
+  "version": "0.0.1",
+  "description": "istanbul code coverage plugin for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DxCx/webpack-istanbul-plugin.git"
+  },
+  "keywords": [
+    "istanbul",
+    "webpack",
+    "plugin",
+    "mocha",
+    "coverage"
+  ],
+  "author": "Hagai Cohen <hagai.co@gmail.com> (https://github.com/DxCx)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/DxCx/webpack-istanbul-plugin/issues"
+  },
+  "homepage": "https://github.com/DxCx/webpack-istanbul-plugin#readme",
+  "peerDependencies": {
+    "istanbul": "*",
+    "webpack": "*"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "webpack": "^2.1.0-beta.21"
+  },
+  "dependencies": {
+    "loader-utils": "^0.2.15",
+    "object-assign": "^4.1.0"
+  }
+}
