@@ -20,7 +20,7 @@ function IstanbulPlugin(options) {
 
 IstanbulPlugin.prototype.filterModule = function(module) {
 	if ( module.error ) {
-		return false;
+		return true;
 	}
 
 	if ( !module.userRequest ) {
