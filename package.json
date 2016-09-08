@@ -1,6 +1,6 @@
 {
   "name": "webpack-istanbul-plugin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "istanbul code coverage plugin for webpack",
   "main": "index.js",
   "scripts": {
