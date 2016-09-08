@@ -16,10 +16,6 @@ module.exports = function(source) {
 			);
 	var ret = instrumenter.instrumentSync(source, this.resourcePath);
 
-	if (this.cacheable) {
-		this.cacheable();
-	}
-
 	this._module.meta.coverState = instrumenter.coverState;
 	return ret;
 };

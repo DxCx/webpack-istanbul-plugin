@@ -19,6 +19,10 @@ function IstanbulPlugin(options) {
 }
 
 IstanbulPlugin.prototype.filterModule = function(module) {
+	if ( module.error ) {
+		return false;
+	}
+
 	if ( !module.userRequest ) {
 		return true;
 	}
