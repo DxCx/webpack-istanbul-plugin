@@ -96,7 +96,7 @@ This file will be the only entry point for Webpack:
 #### Example Usage
 
 I'm using this with both [mocha-webpack](https://www.npmjs.com/package/mocha-webpack) and [mocha-istanbul-spec](https://www.npmjs.com/package/mocha-istanbul-spec)
-here is an [example repository](https://github.com/DxCx/webpack-apollo-server)
+here is an [example repository](https://github.com/DxCx/webpack-graphql-server/tree/df4f79b8c4ab816b57858156423e59b5da108037)
 
 ### License
 [WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-strip.jpg)
